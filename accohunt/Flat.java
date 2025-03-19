@@ -36,6 +36,7 @@ class Flat extends Property{
         System.out.println("Name:- "+propName);
         System.out.println("Flat Type:- "+flatType);
         System.out.println("Available:- "+available);
+        System.out.println("Price:- "+price);
     }
 
     void unregisterProperty(){
@@ -45,5 +46,9 @@ class Flat extends Property{
         price=0;
         flatType=0;
         available=0;
+    }
+
+    String getPropName(){
+        return propName;
     }
 }
